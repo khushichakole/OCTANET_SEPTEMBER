@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #bad5eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    justify-content: center;
+  }
+
+.todo-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#task-input:focus {
+    border-color: #007bff;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+#add-task-btn i {
+    margin-right: 5px;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li:hover {
+    background-color: #f0f4f7;
+    transform: translateY(-2px);
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-text {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.task-btns button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.task-btns button.delete-btn {
+    color: #000000;
+}
+
+.task-btns button.edit-btn {
+    color: #000000;
+}
+
+.task-btns button:hover {
+    background-color: #f0f4f7;
+}
